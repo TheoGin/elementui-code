@@ -117,6 +117,12 @@
         <div class="grid-content bg-purple-light"></div>
       </el-col>
     </el-row>
+    <h1>基于断点的隐藏类</h1>
+    <el-row :gutter="10">
+      <el-col class="hidden-xl-only" :xs="8" :sm="6" :md="4" :lg="3" :xl="1">
+        <div class="grid-content bg-purple"></div>
+      </el-col>
+    </el-row>
     <br />
     <br />
     <br />
