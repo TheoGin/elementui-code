@@ -62,6 +62,49 @@
     <el-row :gutter="20">
       <el-col :span="12" :pull="6"><div class="grid-content bg-purple"></div></el-col>
     </el-row>
+    <h1>对齐方式</h1>
+    <el-row type="flex" class="row-bg">
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+    </el-row>
+    <el-row type="flex" class="row-bg" justify="center">
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+    </el-row>
+    <el-row type="flex" class="row-bg" justify="end">
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+    </el-row>
+    <el-row type="flex" class="row-bg" justify="space-between">
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+    </el-row>
+    <el-row type="flex" class="row-bg" justify="space-around">
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+    </el-row>
+
+    <el-row type="flex" class="row-bg-height" align="bottom">
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+    </el-row>
+    <el-row type="flex" class="row-bg-height" align="middle">
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+    </el-row>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
   </div>
 </template>
 
@@ -103,5 +146,14 @@ export default {
       min-height: 36px;
     }
   }
+
+}
+.row-bg {
+  padding: 10px 0;
+  background-color: #f9fafc;
+}
+.row-bg-height {
+  height: 70px;
+  background-color: #f9fafc;
 }
 </style>
