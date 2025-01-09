@@ -3,6 +3,7 @@ const { defineConfig } = require('@vue/cli-service');
 // const path = require('path');
 
 module.exports = defineConfig({
+  lintOnSave: false,
   transpileDependencies: true,
   /* 两种webpack
     - chainWebpack更改原来的webpack
