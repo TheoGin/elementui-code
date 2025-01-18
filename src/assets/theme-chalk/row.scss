@@ -1,0 +1,43 @@
+.el-row {
+  // 通过父级元素清除浮动
+  &::after,
+  &::before {
+    display: block;
+    content: "";
+  }
+  &::after {
+    clear: both;
+  }
+
+  &--flex {
+    display: flex;
+
+    // 使用flex的时候去掉浮动
+    &::after,
+    &::before {
+      display: none;
+    }
+
+    // &.is-justify-center表示 .el-row--flex下的 .is-justify-center类名
+    &.is-justify-center {
+      justify-content: center;
+    }
+    &.is-justify-end {
+      justify-content: end;
+    }
+    &.is-justify-space-between {
+      justify-content: space-between;
+    }
+    &.is-justify-space-around {
+      justify-content: space-around;
+    }
+
+    &.is-align-middle {
+      align-items: center;
+    }
+    &.is-align-bottom {
+      // flex 布局下的垂直排列方式
+      align-items: flex-end;
+    }
+  }
+}
